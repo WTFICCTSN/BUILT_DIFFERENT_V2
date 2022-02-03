@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8652a8f094624b1a3aa2d3a5ba0c9aed",
+    "content-hash": "486573180483de26137249693df3f5da",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -19206,6 +19206,31 @@
             "time": "2021-12-10T11:20:11+00:00"
         },
         {
+            "name": "skrill/skrill",
+            "version": "2.3.15",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/skrill/skrill/skrill-skrill-2.3.15.0.zip",
+                "shasum": "3054a48845b3979e00e8f97da46c8ba1b24f7e40"
+            },
+            "require": {
+                "php": "~7.0.13||~7.1.0||~7.2.0||~7.3.0||~7.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Skrill\\Skrill\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "Skrill module payment"
+        },
+        {
             "name": "spomky-labs/aes-key-wrap",
             "version": "v6.0.0",
             "source": {
@@ -19414,6 +19439,108 @@
                 "source": "https://github.com/Spomky-Labs/otphp/tree/v10.0.1"
             },
             "time": "2020-01-28T09:24:19+00:00"
+        },
+        {
+            "name": "stripe/module-payments",
+            "version": "2.9.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/stripe/module-payments/stripe-module-payments-2.9.2.0.zip",
+                "shasum": "c327e6b1c3c6fe61ef09ca878a24ad89eae56cc8"
+            },
+            "require": {
+                "stripe/stripe-php": "^7.33.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "StripeIntegration\\Payments\\": ""
+                }
+            },
+            "license": [
+                "https://stripe.com/magento/legal"
+            ],
+            "description": "Shared component for accepting online payments in Magento 2 using the Stripe payment gateway."
+        },
+        {
+            "name": "stripe/stripe-payments",
+            "version": "2.9.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/stripe/stripe-payments/stripe-stripe-payments-2.9.2.0.zip",
+                "shasum": "5eda628c489d5f65d57d7d95ca5819725822a973"
+            },
+            "require": {
+                "stripe/module-payments": "2.9.2"
+            },
+            "type": "metapackage",
+            "license": [
+                "https://stripe.com/magento/legal"
+            ],
+            "description": "Accept online payments in Magento 2 using the Stripe payment gateway."
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v7.112.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "f5213ccb88795663f73841bc65f467a0e1e61180"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/f5213ccb88795663f73841bc65f467a0e1e61180",
+                "reference": "f5213ccb88795663f73841bc65f467a0e1e61180",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v7.112.0"
+            },
+            "time": "2022-01-25T19:42:36+00:00"
         },
         {
             "name": "swissup/module-marketplace",
